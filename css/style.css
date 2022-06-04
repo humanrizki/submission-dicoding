@@ -66,7 +66,7 @@ footer{
    box-sizing: border-box;
    height: 100vh;
    }
-   main {
+   .content > article.tab-content {
       width: 70%;
       height: max-content;
       margin-right: 20px;
@@ -94,6 +94,8 @@ footer{
       display:block;
       width: 50%;
       margin: 20px auto;
+      border-radius: 50%;
+      border: 1px solid gray;
    }
    .all-contact-card{
       display: flex;
@@ -142,7 +144,7 @@ footer{
       box-sizing: border-box;
       align-content: space-between;
    }
-   main {
+   .content > article.tab-content {
       width: 100%;
       padding: 10px;
       box-shadow: 1px 4px 5px 0px gray;
@@ -160,6 +162,8 @@ footer{
    .profile-img-tab{
       display:block;
       width: 150px;
+      border-radius: 50%;
+      border: 1px solid gray;
       margin: 20px auto;
    }
    .all-contact-card{
@@ -219,6 +223,13 @@ footer{
    }
 }
 @media only screen and (max-width: 612px){
+
+   .navbar {
+      display: inline;
+      overflow-x: auto;
+      position: sticky;
+      top: 0px;
+   }
    .all-skill-card{
       display: flex;
       width: 100%;
